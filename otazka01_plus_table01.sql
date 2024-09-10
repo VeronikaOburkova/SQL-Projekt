@@ -1,48 +1,50 @@
 -- 1. Vytvoření tabulky t_veronika_oburkova_projekt_SQL_primary_final
 
+CREATE TABLE IF NOT EXISTS t_veronika_oburkova_projekt_SQL_primary_final AS (
+		SELECT cpc.name AS food_category, 
+	   		  cp2.value AS food_price,
+	   		  cp.value AS average_wages,
+	   		  cp.payroll_year AS 'year',
+	   		  cpib.name AS industry
+		FROM czechia_price cp2 
+		JOIN czechia_payroll cp 
+			ON cp.payroll_year=YEAR(cp2.date_from) 
+			AND cp.value_type_code = 5958 
+			AND cp2.region_code IS NULL    # - tahle podminka mi pomuze ignorovat radky, kde jsou castecne hodnoty v jendotlivych regionech (deleni podle jinych kriterii)
+		JOIN czechia_price_category cpc 
+			ON cp2.category_code=cpc.code
+		JOIN czechia_payroll_industry_branch cpib 
+			ON cp.industry_branch_code=cpib.code);
 
-CREATE OR REPLACE TABLE t_veronika_oburkova_projekt_SQL_primary_final AS
-SELECT
-    cp.payroll_year AS year,
-    cpib.name AS job_category,
-    cp.value AS wage,
-    cp2.category_code AS food_category,
-    cpc.name AS food,
-    round(avg(cp2.value),2) AS price_in_year
-FROM czechia_payroll cp 
-LEFT JOIN czechia_payroll_industry_branch cpib
-    ON cp.industry_branch_code = cpib.code
-LEFT JOIN czechia_price cp2 
-    ON year(cp2.date_from) = cp.payroll_year
-LEFT JOIN czechia_price_category cpc 
-    ON cp2.category_code = cpc.code
-WHERE 
-    cp.value_type_code = 5958 
-    AND calculation_code = 200
-    AND cp.payroll_year BETWEEN 2000 AND 2021
-    AND cp.industry_branch_code IS NOT NULL
-    AND cp.value IS NOT NULL
-    AND cp2.region_code IS NULL
-GROUP BY 
-    cp.payroll_year,
-    cpib.name,
-    cp.value,
-    cp2.category_code,
-    cpc.name;
-    
--- 1. OTÁZKA: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají? 
-   
-SELECT 
-    job_category,
-    CASE 
-        WHEN AVG(wage) > 0 THEN 'Rostoucí'
-        WHEN AVG(wage) < 0 THEN 'Klesající'
-        ELSE 'Bez změny'
-    END AS trend
-FROM t_veronika_oburkova_projekt_SQL_primary_final
-WHERE 
-    year BETWEEN 2000 AND 2021
-GROUP BY 
-    job_category;
+-- 1. Otázka: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
 
-   
+SELECT t_2006.industry,
+	   ROUND(AVG(t_2006.average_wages_2006),2) AS avg_wages_2006,
+	   ROUND(AVG(t_2010.average_wages_2010),2) AS avg_wages_2010,
+	   ROUND(AVG(t_2018.average_wages_2018),2) AS avg_wages_2018,
+CASE WHEN AVG(t_2018.average_wages_2018) > AVG(t_2010.average_wages_2010) THEN 'increase_2018'
+	 WHEN AVG(t_2010.average_wages_2010) > AVG(t_2006.average_wages_2006) THEN 'increase_2010'
+	 ELSE 'decrease'
+	 END AS changes
+FROM (
+		SELECT DISTINCT industry,
+						average_wages AS average_wages_2006,
+						`year`
+		FROM t_veronika_oburkova_projekt_SQL_primary_final
+		WHERE YEAR ='2006') t_2006
+LEFT JOIN (
+			SELECT DISTINCT industry,
+							average_wages as average_wages_2010,
+							`year`
+			FROM t_veronika_oburkova_projekt_SQL_primary_final
+			WHERE YEAR='2010') t_2010
+	ON t_2006.industry=t_2010.industry
+LEFT JOIN (
+			SELECT DISTINCT industry,
+							average_wages as average_wages_2018,
+							`year`
+			FROM t_veronika_oburkova_projekt_SQL_primary_final
+			WHERE YEAR='2018') t_2018
+ON t_2010.industry=t_2018.industry
+GROUP BY t_2006.`year`,
+		 t_2006.industry;
