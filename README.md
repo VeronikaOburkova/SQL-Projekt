@@ -19,6 +19,7 @@ t_veronika_oburkova_projekt_SQL_primary_final
     - czechia_payroll: informace o mzdách,
     - czechia_price: ceny potravin,
     - czechia_price_category: kódy vybraných potravin
+    - czechia_payroll_industry_branch: číselník odvětví
   
 t_veronika_oburkova_projekt_SQL_secondary_final 
 - pro dodatečná data o dalších evropských státech z datových sad economies a countries
