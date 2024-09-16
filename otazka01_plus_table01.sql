@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS t_veronika_oburkova_projekt_SQL_primary_final AS (
 		JOIN czechia_payroll cp 
 			ON cp.payroll_year=YEAR(cp2.date_from) 
 			AND cp.value_type_code = 5958 
-			AND cp2.region_code IS NULL    # - tahle podminka mi pomuze ignorovat radky, kde jsou castecne hodnoty v jendotlivych regionech (deleni podle jinych kriterii)
+			AND cp2.region_code IS NULL
 		JOIN czechia_price_category cpc 
 			ON cp2.category_code=cpc.code
 		JOIN czechia_payroll_industry_branch cpib 
