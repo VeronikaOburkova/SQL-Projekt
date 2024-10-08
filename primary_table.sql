@@ -1,5 +1,6 @@
 -- 1. Vytvoření tabulky t_veronika_oburkova_projekt_SQL_primary_final
 
+
 CREATE TABLE IF NOT EXISTS t_veronika_oburkova_projekt_SQL_primary_final AS (
 		SELECT cpc.name AS food_category, 
 	   		  cp2.value AS food_price,
