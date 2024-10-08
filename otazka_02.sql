@@ -1,5 +1,6 @@
 -- 2.otázka: Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
 
+
 SELECT food_category,
 	   ROUND(AVG(food_price),2) AS avg_food_price,
 	   ROUND(AVG(average_wages),2) AS avg_wages,
