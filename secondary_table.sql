@@ -1,5 +1,6 @@
 -- Vytvoření druhé tabulky z datových sad economies a countries
 
+
 CREATE TABLE IF NOT EXISTS t_veronika_oburkova_projekt_SQL_secondary_final AS (
 		SELECT te.GDP,
 	   		  te.gini,
