@@ -1,5 +1,6 @@
 -- 1. Otázka: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
 
+
 SELECT
 	ROUND(AVG(average_wages), 2) AS wage,
 	industry,
