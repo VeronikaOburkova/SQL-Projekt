@@ -47,10 +47,13 @@ V roce 2013 oproti roku 2012 se udál pokles mezd v nejvíce odvětvích. Jsou t
 - Výroba a rozvod elektřiny, plynu, tepla a klimatiz. Vzduchu
 - Zásobování vodou; činnosti související s odpady a sanacemi
 
-- Dále v roce 2009 byl oproti předchozímu roku pokles v odvětvích: Těžba a dobývání, Ubytování, stravování a pohostinství a Zemědělství, lesnictví, rybářství.
-- V roce 2010 byl pokles v odvětvích: Profesní, vědecké a technické činnosti, Veřejná správa a obrana; povinné sociální zabezpečení a Vzdělávání.
-- V roce 2011 byl pokles v odvětvích: Kulturní, zábavní a rekreační činnosti, Ubytování, stravování a pohostinství a Veřejná správa a obrana; povinné sociální zabezpečení.
-- V roce 2015 byl pokles v odvětví Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu a v roce 2016 byl zaznamenán pokles růstu mezd v odvětví Těžba a dobývání.
+Dále v roce 2009 byl oproti předchozímu roku pokles v odvětvích: Těžba a dobývání, Ubytování, stravování a pohostinství a Zemědělství, lesnictví, rybářství.
+
+V roce 2010 byl pokles v odvětvích: Profesní, vědecké a technické činnosti, Veřejná správa a obrana; povinné sociální zabezpečení a Vzdělávání.
+
+V roce 2011 byl pokles v odvětvích: Kulturní, zábavní a rekreační činnosti, Ubytování, stravování a pohostinství a Veřejná správa a obrana; povinné sociální zabezpečení.
+
+V roce 2015 byl pokles v odvětví Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu a v roce 2016 byl zaznamenán pokles růstu mezd v odvětví Těžba a dobývání.
 
 3. Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
 ODPOVĚĎ: Z výsledku dotazu je možné říci, že v roce 2006 si bylo možné koupit za průměrný plat 1287kg chleba a 1437 litrů mléka a v roce 2018 jste si mohli z průměrného platu koupit 1342kg chleba a 1642 litrů mléka. 
