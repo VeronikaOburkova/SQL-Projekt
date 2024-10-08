@@ -4,5 +4,5 @@ SELECT
 	ROUND(AVG(average_wages), 2) AS wage,
 	industry,
 	`year` 
-FROM t_veronika_oburkova_projekt_SQL_primary_final AS tvopspf
+FROM t_veronika_oburkova_projekt_SQL_primary_final
 group by industry, `year`;
