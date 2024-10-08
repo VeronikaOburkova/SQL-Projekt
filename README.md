@@ -35,17 +35,17 @@ Odvětví, kde mzdy v každém roce rostly:
     - Zpracovatelský průmysl
 
 V roce 2013 oproti roku 2012 se udál pokles mezd v nejvíce odvětvích. Jsou to:
-    - Administrativní a podpůrné činnosti
-    - Činnosti v oblasti nemovitostí
-    - Informační a komunikační činnosti
-    - Kulturní, zábavní a rekreační činnosti
-    - Peněžnictví a pojišťovnictví
-    - Profesní, vědecké a technické činnosti
-    - Stavebnictví
-    - Těžba a dobývání
-    - Velkoobchod a maloobchod; opravy a údržba motorových vozidel	
-    - Výroba a rozvod elektřiny, plynu, tepla a klimatiz. Vzduchu
-    - Zásobování vodou; činnosti související s odpady a sanacemi
+- Administrativní a podpůrné činnosti
+- Činnosti v oblasti nemovitostí
+- Informační a komunikační činnosti
+- Kulturní, zábavní a rekreační činnosti
+- Peněžnictví a pojišťovnictví
+- Profesní, vědecké a technické činnosti
+- Stavebnictví
+- Těžba a dobývání
+- Velkoobchod a maloobchod; opravy a údržba motorových vozidel
+- Výroba a rozvod elektřiny, plynu, tepla a klimatiz. Vzduchu
+- Zásobování vodou; činnosti související s odpady a sanacemi
 
 - Dále v roce 2009 byl oproti předchozímu roku pokles v odvětvích: Těžba a dobývání, Ubytování, stravování a pohostinství a Zemědělství, lesnictví, rybářství.
 - V roce 2010 byl pokles v odvětvích: Profesní, vědecké a technické činnosti, Veřejná správa a obrana; povinné sociální zabezpečení a Vzdělávání.
