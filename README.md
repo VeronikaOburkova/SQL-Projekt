@@ -2,7 +2,6 @@
 
 SQL projekt pro Engeto Akademii
 
-
 Výzkumné otázky, na které se pokusím odpovědět:
 
     1. Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají? 
@@ -30,10 +29,10 @@ Následně jsem vytvořila 5 SQL scriptů, které vytvářejí podklady pro odpo
 
 ODPOVĚĎ:
 Odvětví, kde mzdy v každém roce rostly:
-    - Doprava a skladování
-    - Ostatní činnosti
-    - Zdravotní  a soc. Péče
-    - Zpracovatelský průmysl
+- Doprava a skladování
+- Ostatní činnosti
+- Zdravotní  a soc. Péče
+- Zpracovatelský průmysl
 
 V roce 2013 oproti roku 2012 se udál pokles mezd v nejvíce odvětvích. Jsou to:
 - Administrativní a podpůrné činnosti
@@ -56,19 +55,23 @@ V roce 2011 byl pokles v odvětvích: Kulturní, zábavní a rekreační činnos
 
 V roce 2015 byl pokles v odvětví Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu a v roce 2016 byl zaznamenán pokles růstu mezd v odvětví Těžba a dobývání.
 
-3. Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
+
+2. Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období v dostupných datech cen a mezd?
 
 ODPOVĚĎ: Z výsledku dotazu je možné říci, že v roce 2006 si bylo možné koupit za průměrný plat 1287kg chleba a 1437 litrů mléka a v roce 2018 jste si mohli z průměrného platu koupit 1342kg chleba a 1642 litrů mléka. 
 
-4. Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
+
+3. Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
 
 ODPOVĚĎ: Nejpomaleji zdražují Rajská jablka červená kulatá v roce 2007.
 
-5. Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
+
+4. Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
 
 ODPOVĚĎ: Dle mého pozorování neexistuje. Nebyl rok, kdy byl meziroční nárůst cen potravin výrazně vyšší (víc než 10%).
 
-6. Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo násdujícím roce výraznějším růstem?
+
+5. Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo násdujícím roce výraznějším růstem?
 
 ODPOVĚĎ:  V roce 2007 byl nárůst HDP o 5,28% a taktéž ceny potravin narostly o 5,97% a mzdy o 6,4%. V dalším roce pokračoval růst cen potravin o 6,02% a růst mezd se zastavil až na 7,3%.
 Zajímavý je rok 2009, kdy naopak HDP klesalo o -4,88%. V ten rok ceny potravin klesly o -7,31%, ale mzdy stálo rostly o 3,06%.
