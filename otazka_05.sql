@@ -17,7 +17,7 @@ WITH t_year AS (
     			WHERE food_price IS NOT NULL 
     	  		AND average_wages IS NOT NULL
     			GROUP BY YEAR),
-    t_prev_year AS (
+t_prev_year AS (
     			SELECT AVG(average_wages) AS avg_wages_prev_year,
     	   			   AVG(food_price) AS avg_food_price_prev_year,
     	   				YEAR+1 AS prev_year
@@ -25,13 +25,13 @@ WITH t_year AS (
     					WHERE food_price IS NOT NULL 
     	  				AND average_wages IS NOT NULL
     			GROUP BY prev_year),
-    t_year_GDP AS (
+t_year_GDP AS (
     			SELECT AVG(GDP) AS avg_gdp_year,
     	   				YEAR  
     			FROM v_vo_view05
     			WHERE GDP IS NOT NULL
     			GROUP BY YEAR),
-    t_prev_GDP AS (
+t_prev_GDP AS (
     			SELECT AVG(GDP) AS avg_gdp_prev_year,
     	   				YEAR+1 AS year_before
     			FROM v_vo_view05
