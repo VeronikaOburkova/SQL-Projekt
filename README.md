@@ -26,7 +26,7 @@ t_veronika_oburkova_projekt_SQL_secondary_final
 
 Následně jsem vytvořila 5 SQL scriptů, které vytvářejí podklady pro odpovědi na dané otázky:
 
- 1. Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají? 
+ 1. Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
 ODPOVĚĎ:
 Odvětví, kde mzdy v každém roce rostly:
     - Doprava a skladování
